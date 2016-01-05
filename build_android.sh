@@ -19,7 +19,7 @@ fi
 
 
 SOURCE=`pwd`
-PREFIX=$SOURCE/build/android
+PREFIX=$SOURCE/../libs/x264/armeabi-v7a
 
 SYSROOT=$ANDROID_NDK/platforms/android-12/arch-arm
 CROSS_PREFIX=$ANDROID_NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/$HOST_SYSTEM/bin/arm-linux-androideabi-
