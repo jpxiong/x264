@@ -97,6 +97,7 @@ for version in armeabi armeabi-v7a arm64-v8a x86; do
     --enable-static \
     --enable-strip \
     --disable-cli \
+    --disable-asm \
     --host=i686-linux \
     --cross-prefix=$CROSS_PREFIX \
     --sysroot=$SYSROOT \
