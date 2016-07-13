@@ -61,7 +61,6 @@ for version in armeabi armeabi-v7a arm64-v8a x86; do
     --enable-pic \
     --enable-static \
     --enable-strip \
-    --disable-asm \
     --disable-cli \
     --host=arm-linux \
     --cross-prefix=$CROSS_PREFIX \
@@ -97,8 +96,8 @@ for version in armeabi armeabi-v7a arm64-v8a x86; do
     --enable-pic \
     --enable-static \
     --enable-strip \
-    --disable-asm \
     --disable-cli \
+    --disable-asm \
     --host=i686-linux \
     --cross-prefix=$CROSS_PREFIX \
     --sysroot=$SYSROOT \
