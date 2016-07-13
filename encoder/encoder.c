@@ -1952,15 +1952,9 @@ static int x264_encoder_encapsulate_nals( x264_t *h, int start )
 
     for( int i = start; i < h->out.i_nal; i++ )
     {
-<<<<<<< HEAD
-        int old_payload_len = h->out.nal[i].i_payload;
         h->out.nal[i].b_long_startcode = 1/*!i || h->out.nal[i].i_type == NAL_SPS || h->out.nal[i].i_type == NAL_PPS ||
                                          h->param.i_avcintra_class*/;
-=======
-        h->out.nal[i].b_long_startcode = !i || h->out.nal[i].i_type == NAL_SPS || h->out.nal[i].i_type == NAL_PPS ||
-                                         h->param.i_avcintra_class;
->>>>>>> 3f5ed56d4105f68c01b86f94f41bb9bbefa3433b
-        x264_nal_encode( h, nal_buffer, &h->out.nal[i] );
+		x264_nal_encode( h, nal_buffer, &h->out.nal[i] );
         nal_buffer += h->out.nal[i].i_payload;
     }
 
